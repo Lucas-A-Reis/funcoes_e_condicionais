@@ -6,17 +6,17 @@
         echo "elfo: $nome_elfo, ";
 
         if ($numero_elfo == 1){
-            echo  'elfo do Clã Uchiha <br>';
+            echo  'elfo Avari <br>';
         }
         else if ($numero_elfo == 2){
-            echo 'elfo do Clã Hyuuga <br>';
+            echo 'elfo Falmari <br>';
         }
         else if ($numero_elfo == 3){
-            echo 'elfo do Clã Nara <br>';
+            echo 'elfo Sindar <br>';
 
         }
         else if ($numero_elfo == 4){
-            echo 'elfo do Clã Aburame <br>';
+            echo 'elfo Vanyar <br>';
     
         }
         else if ($numero_elfo == 5){
@@ -29,15 +29,30 @@
     };
     
     include 'elfo.php';
-
-    checar_cla($Hinata['nome_elfo'], $Hinata['numero_elfo']);
-    echo descrever_cla(2);
-
-    
     include 'sistema_rank/niveis.php';
     include 'sistema_rank/ranks.php';
 
-    $atribuir_missao = missoes(rankeadora($Hinata['nivel']));
+    $atribuir_missao($nome){
+        missoes(rankeadora($elfos[$nome['nivel']]))
+    };
+
+    $cardElfo($nome){
+        return "<div>
+        <p>nome:" $elfos[$nome['nome_elfo']]"</p> <br>
+        <p>clã:" checar_cla($elfos[$nome['nome_elfo']], $elfos[$nome['numero_elfo']])"</p> <br>
+        <p>"echo descrever_cla($elfos[$nome['numero_elfo']])"</p> <br>"
+        $atribuir_missao($nome) "<br>
+        <p>feitos:" foreach ($elfos[$nome['feitos']] as $feito){
+            echo $feito
+        }"</p>
+        <p>filhos:" if ($elfos[$nome['nome_elfo']] == true) {
+            echo "Sim"
+        } else {
+            echo "Não"
+        }"</p>
+    </div>"
+    };
+
 
 
     ?>

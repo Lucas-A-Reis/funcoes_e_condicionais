@@ -11,6 +11,7 @@
     require_once "pedacos/cabecalho.php";
     require_once "pedacos/rodape.php";
     require_once "funcoes.php";
+    echo cardElfo('Finrod');
     
 
     ?>
