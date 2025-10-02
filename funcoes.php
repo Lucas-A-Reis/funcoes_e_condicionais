@@ -6,21 +6,21 @@
         echo "elfo: $nome_elfo, ";
 
         if ($numero_elfo == 1){
-            echo  'elfo Avari <br>';
+            echo  'elfo Avar <br>';
         }
         else if ($numero_elfo == 2){
-            echo 'elfo Falmari <br>';
+            echo 'elfo Falma <br>';
         }
         else if ($numero_elfo == 3){
-            echo 'elfo Sindar <br>';
+            echo 'elfo Sinda <br>';
 
         }
         else if ($numero_elfo == 4){
-            echo 'elfo Vanyar <br>';
+            echo 'elfo Vanya <br>';
     
         }
         else if ($numero_elfo == 5){
-            echo 'Elfo do Clã Ñoldor <br>';
+            echo 'elfo Ñoldo <br>';
     
         }
         else {
