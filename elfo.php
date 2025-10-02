@@ -14,7 +14,7 @@ $elfos = [
     'nome_elfo' => 'Shkoro',
     'numero_elfo' => 1,
     'nivel' => 2,
-    'feitos' => ['fez mais de cem filhos em sua esposa', 'domou lobisomens', 'matou um dos magos azuis'],
+    'feitos' => ['domou lobisomens', 'matou um dos magos azuis'],
     'filhos' => true
 ],
 
