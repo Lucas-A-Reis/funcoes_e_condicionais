@@ -37,15 +37,9 @@
     };
 
 
-    foreach ($elfos[$nome]['feitos'] as $feito){
-        return $feito;
-    };
 
-    if($elfos[$nome]['filhos'] == true) {
-            $filhos = "Sim";
-    } else {
-        $filhos = "Não";
-    }
+
+
 
     function cardElfo($nome){
         return "<div>
