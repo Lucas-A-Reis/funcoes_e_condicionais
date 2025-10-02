@@ -2,11 +2,7 @@
 
 include 'elfo.php';
 
-if($elfos[$nome]['filhos'] == true) {
-        $filhos = "Sim";
-    } else {
-        $filhos = "Não";
-}
+
 
 
 function funcaoteste($nome){
@@ -16,13 +12,19 @@ function funcaoteste($nome){
         echo '<ul><li>'.$feito.'</li></ul>';
     };
 
-    echo ''
-
-
-    
-    
+    if($elfos[$nome]['filhos'] == false) {
+        $filhos = "não teve filhos";
+    } else {
+        foreach ($elfos[$nome]['filhos'] as $filho){
+            echo '<ul><li>'.$filho.'</li></ul>';
+        }
+    }
 };
 
-funcaoteste('Finrod');
+
+
+
+
+funcaoteste('Ingwë');
 
 ?>
