@@ -3,14 +3,21 @@
 include 'elfo.php';
 include 'funcoes.php';
 
+echo '<dialog>
+        <h3>Ñoldor</h3>
+        <p>'.checar_cla('Finrod', 5).'</p>
+        <button>Fechar</button>
+    </dialog>';
+
 function funcaoteste($nome){
     
     global $elfos;
 
-    echo '<p>nome: '.$elfos[$nome]['nome_elfo'].'</p><br>';
+    echo '<p>nome: '.$elfos[$nome]['nome_elfo'].'</p>';
 
     echo checar_cla($elfos[$nome]['nome_elfo'], $elfos[$nome]['numero_elfo']).'</p>';
 
+    echo '<p>'.descrever_cla($elfos[$nome]['numero_elfo']).'</p>';
 
     echo 'Feitos:<br>';
     foreach ($elfos[$nome]['feitos'] as $feito){
@@ -29,4 +36,14 @@ function funcaoteste($nome){
 
 funcaoteste('Ingwë');
 
+
+
+
+
+
+
 ?>
+
+
+
+
