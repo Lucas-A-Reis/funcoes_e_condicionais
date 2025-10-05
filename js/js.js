@@ -1,0 +1,1 @@
+const janelamodal = document.querySelector("")
